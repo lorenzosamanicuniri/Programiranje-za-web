@@ -23,6 +23,7 @@ class Plastika(models.Model):
     plastika_proizvodjac = models.ForeignKey(Proizvodjac, default=1, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     type = models.CharField(max_length=20)
+    price = models.CharField(max_length=20)
     temperature = models.CharField(max_length=20)
 
     def __str__(self):
