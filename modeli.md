@@ -7,6 +7,7 @@ U aplikaciji ćemo imati 3 modela. Proizvodjac, Plastika,  Printer.
 
 Sadržaj datoteke models.py:
 
+```
 from django.db import models
 
 class Proizvodjac(models.Model):
@@ -37,3 +38,4 @@ class Printer(models.Model):
 
     def __str__(self):
         return self.model
+```
